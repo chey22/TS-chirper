@@ -28,7 +28,7 @@ const Details: React.FC<DetailsProps> = () => {
                 <h4 className="card-title">@{chirp?.username}</h4>
                 {/* optional chaining (aka conditional rendering) - means that if chirp is null, it is false and will skip .username. But if chirp is true and vas a value, then render .username :) Same principle below with chirp?.message and chirp?.id */}
                 <p className="card-text">{chirp?.message}</p>
-                <div className="d-flex justify-content-end alighn-items-center">
+                <div className="d-flex justify-content-end align-items-center">
                     <button onClick={() => history.goBack()} className="btn btn-sm btn-outline-primary mx-1">Go Back</button>
                     <Link className="btn btn-sm btn-outline-dark mx-1" to={`/admin/${chirp?.id}`}>Edit</Link>
                 </div>
