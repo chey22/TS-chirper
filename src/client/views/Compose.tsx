@@ -23,11 +23,12 @@ const Compose: React.FC<ComposeProps> = () => {
       body: JSON.stringify({ username, message })
     });
     if (res.ok) {
-        history.push('/'); // if response status code is ok, push a new pach into history back to home page
+        history.push('/'); // if response status code is ok, push a new path into history back to home page
     } else {
         console.log('uh oh')
     }
   };
+
   return (
     <main className="container">
       <section className="row my-2 justify-content-center">

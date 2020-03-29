@@ -43,7 +43,7 @@ router.put("/:chirpid", (req, res) => {
   const chirpid = req.params.chirpid;
   const chirp = req.body;
   ChirpStore.UpdateChirp(chirpid, chirp);
-  res.status(201).json(`Chirp ${chirpid} Updated`);
+  res.status(200).json(`Chirp ${chirpid} Updated`);
 });
 
 // DELETE /api/chirps/:chirpid
